@@ -1,0 +1,11 @@
+@EndUserText.label: 'Task 7.2 User 4350'
+@MappingRole: true
+define role Z4350_AGENCY {
+    grant
+        select
+            on
+                Z4350_AGENCY
+                    where
+                        (AgencyId) = aspect pfcg_auth(/LRN/AGCY,/LRN/AGCY, ACTVT = '03');
+                        
+}
